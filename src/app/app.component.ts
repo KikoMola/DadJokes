@@ -13,16 +13,19 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AppComponent implements OnInit {
   title = 'DadJokes';
-  joke: Joke[] = [];
+  actualJoke = '';
 
   constructor(public jokeService: JokeService, public http: HttpClient) {}
 
   ngOnInit(): void {}
 
   getJoke() {
-    this.jokeService.getJoke().subscribe((data: Joke[]) => {
-      console.log(data)
+    this.jokeService.getJoke().subscribe((data: any) => {
+      // console.log(data.joke)
+      this.actualJoke = data.joke;
+      // console.log(this.actualJoke)
     });
+    
     
   }
 }
