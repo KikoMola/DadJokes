@@ -1,3 +1,8 @@
-<!-- <button (click)="getJoke()">Hey</button> -->
-<h1>{{ actualJoke }}</h1>
-<button (click)="getJoke()">Hey</button>
+<div class="container justify-content-center align-items-center mt-5 w-50">
+  <div class="row">
+    <div class="card justify-content-center align-items-center">
+      <h1 class="m-3">{{ actualJoke }}</h1>
+      <button class="btn btn-primary m-5" (click)="getJoke()">Next joke</button>
+    </div>
+  </div>
+</div>

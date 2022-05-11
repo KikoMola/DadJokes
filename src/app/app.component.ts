@@ -17,13 +17,13 @@ export class AppComponent implements OnInit {
 
   constructor(public jokeService: JokeService, public http: HttpClient) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.getJoke();
+  }
 
   getJoke() {
     this.jokeService.getJoke().subscribe((data: any) => {
-      // console.log(data.joke)
       this.actualJoke = data.joke;
-      // console.log(this.actualJoke)
     });
     
     
