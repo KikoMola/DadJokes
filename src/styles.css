@@ -12,3 +12,7 @@ body {
 .card {
     height: 40vh;
 }
+
+h1 {
+    height: 15vh;
+}
