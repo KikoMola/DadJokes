@@ -1,5 +1,5 @@
 # DadJokes
 
-## [ES] Bromas de padres
+## [🇪🇦] Bromas de padres
 
-## [EN] Dad jokes
+## [🇬🇧] Dad jokes
